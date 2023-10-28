@@ -1,3 +1,4 @@
+import { PropsWithChildren } from 'react'
 import './globals.css'
 
 export const metadata = {
@@ -5,11 +6,7 @@ export const metadata = {
   description: 'The fastest way to build apps with Next.js and Supabase',
 }
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+export default function RootLayout({ children }: PropsWithChildren) {
   return (
     <html lang="en">
       <body className="bg-background text-foreground">

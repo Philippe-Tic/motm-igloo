@@ -1,6 +1,6 @@
+import Code from '@/components/Code'
 import Link from 'next/link'
 import Step from './Step'
-import Code from '@/components/Code'
 
 const create = `
 create table notes (
@@ -49,18 +49,12 @@ export default function Page() {
 
 export default function SignUpUserSteps() {
   return (
-    <ol className="flex flex-col gap-6">
+    <ol>
       <Step title="Sign up your first user">
         <p>
-          Head over to the{' '}
-          <Link
-            href="/login"
-            className="font-bold hover:underline text-foreground/80"
-          >
-            Login
-          </Link>{' '}
-          page and sign up your first user. It's okay if this is just you for
-          now. Your awesome idea will have plenty of users later!
+          Head over to the <Link href="/login">Login</Link> page and sign up
+          your first user. It's okay if this is just you for now. Your awesome
+          idea will have plenty of users later!
         </p>
       </Step>
 
@@ -69,7 +63,6 @@ export default function SignUpUserSteps() {
           Head over to the{' '}
           <a
             href="https://supabase.com/dashboard/project/_/editor"
-            className="font-bold hover:underline text-foreground/80"
             target="_blank"
             rel="noreferrer"
           >
@@ -80,7 +73,6 @@ export default function SignUpUserSteps() {
           following into the{' '}
           <a
             href="https://supabase.com/dashboard/project/_/sql/new"
-            className="font-bold hover:underline text-foreground/80"
             target="_blank"
             rel="noreferrer"
           >

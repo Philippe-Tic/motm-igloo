@@ -22,7 +22,7 @@ export default function Login() {
         Back
       </Link>
 
-      <form action="/auth/sign-in" method="post">
+      <form>
         <label className="text-md" htmlFor="email">
           Email
         </label>
@@ -37,7 +37,7 @@ export default function Login() {
           required
         />
         <Button>Sign In</Button>
-        <Button formAction="/auth/sign-up">Sign Up</Button>
+        <Button>Sign Up</Button>
         <Messages />
       </form>
     </div>

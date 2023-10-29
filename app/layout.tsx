@@ -1,3 +1,4 @@
+import { Document } from '@/app/Document'
 import { PropsWithChildren } from 'react'
 
 export const metadata = {
@@ -6,11 +7,5 @@ export const metadata = {
 }
 
 export default function RootLayout({ children }: PropsWithChildren) {
-  return (
-    <html lang="fr">
-      <body>
-        <main>{children}</main>
-      </body>
-    </html>
-  )
+  return <Document>{children}</Document>
 }

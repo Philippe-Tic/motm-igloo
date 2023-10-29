@@ -1,3 +1,4 @@
+import { Button, Input } from '@chakra-ui/react'
 import Link from 'next/link'
 import Messages from './messages'
 
@@ -25,18 +26,18 @@ export default function Login() {
         <label className="text-md" htmlFor="email">
           Email
         </label>
-        <input name="email" placeholder="you@example.com" required />
+        <Input name="email" placeholder="you@example.com" required />
         <label className="text-md" htmlFor="password">
           Password
         </label>
-        <input
+        <Input
           type="password"
           name="password"
           placeholder="••••••••"
           required
         />
-        <button>Sign In</button>
-        <button formAction="/auth/sign-up">Sign Up</button>
+        <Button>Sign In</Button>
+        <Button formAction="/auth/sign-up">Sign Up</Button>
         <Messages />
       </form>
     </div>
